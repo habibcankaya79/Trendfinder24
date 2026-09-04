@@ -269,7 +269,7 @@
             <div class="card-body">
               <div class="card-title">${item.title}</div>
               <div class="card-meta">
-                <span class="price">${item.price}</span>
+                <span class="price">${item.price ? item.price : 'Preis bei Amazon'}</span>
                 <div class="actions">
                   <a class="btn" href="${item.pinterest_url}" target="_blank" rel="noopener">Pin</a>
                   <a class="btn primary" href="${item.amazon_url}" target="_blank" rel="noopener sponsored">Ansehen</a>

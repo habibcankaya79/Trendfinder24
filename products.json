@@ -1,56 +1,74 @@
 [
   {
     "id": "p001",
-    "title": "Kabellose Ladestation 3-in-1",
-    "price": "24,99 €",
-    "image": "https://picsum.photos/seed/trendfinder1/600/750",
-    "amazon_url": "https://www.amazon.de/dp/EXAMPLE1?tag=habib4200-21",
-    "pinterest_url": "https://www.pinterest.com/pin/EXAMPLE1/",
-    "added": "2026-09-01"
+    "title": "Peloton Laufband für jedes Level 🏃‍♂️🚶‍♀️",
+    "price": "",
+    "image": "https://i.pinimg.com/736x/e8/ea/bd/e8eabd8b8532ad1d4664044bfcd34d17.jpg",
+    "amazon_url": "https://www.amazon.de/Peloton-Laufband-Training-Laufen-Walking/dp/B0FLQNKSCZ?tag=habib4200-21",
+    "pinterest_url": "https://www.pinterest.com/pin/988540186979207123/",
+    "added": "2026-08-31"
   },
   {
     "id": "p002",
-    "title": "Ergonomische Laptop-St\u00e4nder",
-    "price": "32,50 €",
-    "image": "https://picsum.photos/seed/trendfinder2/600/900",
-    "amazon_url": "https://www.amazon.de/dp/EXAMPLE2?tag=habib4200-21",
-    "pinterest_url": "https://www.pinterest.com/pin/EXAMPLE2/",
-    "added": "2026-09-02"
+    "title": "Pokémon Tech-Blister Morbitesse: Dein nächstes Highlight für Sammlung & Deck!",
+    "price": "",
+    "image": "https://i.pinimg.com/736x/4d/c9/f8/4dc9f813a9855fe8c8edb16ee8ade18a.jpg",
+    "amazon_url": "https://www.amazon.de/Pok%C3%A9mon-Sammelkartenspiel-Tech-Sticker-Kollektion-Morbitesse-holografische-Boosterpacks/dp/B0FCMZN8DR?tag=habib4200-21",
+    "pinterest_url": "https://www.pinterest.com/pin/988540186979184944/",
+    "added": "2026-08-30"
   },
   {
     "id": "p003",
-    "title": "LED-Streifen f\u00fcr Gaming-Setup",
-    "price": "18,90 €",
-    "image": "https://picsum.photos/seed/trendfinder3/600/600",
-    "amazon_url": "https://www.amazon.de/dp/EXAMPLE3?tag=habib4200-21",
-    "pinterest_url": "https://www.pinterest.com/pin/EXAMPLE3/",
-    "added": "2026-09-02"
+    "title": "KI im Alltag: Der praktische Ratgeber für Einsteiger 🤖✨",
+    "price": "",
+    "image": "https://i.pinimg.com/736x/cc/34/4d/cc344df5b124572152a99e6ae31678ec.jpg",
+    "amazon_url": "https://www.amazon.de/KI-Alltag-praktische-Ratgeber-Einsteiger/dp/B0HFYX3V1Q?tag=habib4200-21",
+    "pinterest_url": "https://www.pinterest.com/pin/988540186979218021/",
+    "added": "2026-08-31"
   },
   {
     "id": "p004",
-    "title": "Mini-Luftbefeuchter USB",
-    "price": "15,99 €",
-    "image": "https://picsum.photos/seed/trendfinder4/600/800",
-    "amazon_url": "https://www.amazon.de/dp/EXAMPLE4?tag=habib4200-21",
-    "pinterest_url": "https://www.pinterest.com/pin/EXAMPLE4/",
-    "added": "2026-09-03"
+    "title": "OWRILLA® Pfeil und Bogen Kinder Set | Einsteiger Sportbogen mit 3 Saugnapf- und 3 Spitzen-Pfeilen",
+    "price": "",
+    "image": "https://i.pinimg.com/736x/42/3b/04/423b04eee86cd1691d11b8723a90abe1.jpg",
+    "amazon_url": "https://www.amazon.de/Einsteiger-Sportbogen-Jugendliche-Recurvebogen-Linksh%C3%A4nder/dp/B0B28JJTKN?tag=habib4200-21",
+    "pinterest_url": "https://www.pinterest.com/pin/988540186979184552/",
+    "added": "2026-08-30"
   },
   {
     "id": "p005",
-    "title": "Organizer-Set K\u00fcche",
-    "price": "21,40 €",
-    "image": "https://picsum.photos/seed/trendfinder5/600/700",
-    "amazon_url": "https://www.amazon.de/dp/EXAMPLE5?tag=habib4200-21",
-    "pinterest_url": "https://www.pinterest.com/pin/EXAMPLE5/",
-    "added": "2026-09-03"
+    "title": "Plötzlich Chef: So machst du deinen Aufstieg zum Erfolg | TrendFinder24 Buchtipp",
+    "price": "",
+    "image": "https://i.pinimg.com/736x/12/04/01/120401c5ede2efeb3a2b582b591de99f.jpg",
+    "amazon_url": "https://www.amazon.de/Pl%C3%B6tzlich-Chef-F%C3%BChrungskraft-erfolgreich-durchzustarten/dp/3910385265?tag=habib4200-21",
+    "pinterest_url": "https://www.pinterest.com/pin/988540186979204584/",
+    "added": "2026-08-31"
   },
   {
     "id": "p006",
-    "title": "Faltbare Reise-Kopfh\u00f6rer",
-    "price": "27,00 €",
-    "image": "https://picsum.photos/seed/trendfinder6/600/850",
-    "amazon_url": "https://www.amazon.de/dp/EXAMPLE6?tag=habib4200-21",
-    "pinterest_url": "https://www.pinterest.com/pin/EXAMPLE6/",
-    "added": "2026-09-04"
+    "title": "Wiederaufladbare Leselampe mit Klemme: Klein, flexibel und augenschonend für ungestörten Lesespaß",
+    "price": "",
+    "image": "https://i.pinimg.com/736x/14/98/3d/14983ddb019591993fad5cbf534c4e1c.jpg",
+    "amazon_url": "https://www.amazon.de/86lux-Leselampe-Klemme%EF%BC%8CWiederaufladbare-Buchlampe-Lesen/dp/B0BBKYBN1B?tag=habib4200-21",
+    "pinterest_url": "https://www.pinterest.com/pin/988540186979263239/",
+    "added": "2026-09-02"
+  },
+  {
+    "id": "p007",
+    "title": "PHILIPS 6er Pack Reflektor warmweiß energiesparend",
+    "price": "",
+    "image": "https://i.pinimg.com/736x/fc/aa/e8/fcaae88ee909b7cce3eca58781767bfc.jpg",
+    "amazon_url": "https://www.amazon.de/PHILIPS-6er-Pack-Reflektor-warmwei%C3%9F-energiesparend/dp/B09ZBJDMM6?tag=habib4200-21",
+    "pinterest_url": "https://www.pinterest.com/pin/988540186979263209/",
+    "added": "2026-09-02"
+  },
+  {
+    "id": "p008",
+    "title": "Wenko Raumentfeuchter: Effektive Hilfe gegen Feuchtigkeit und Schimmel ohne Strom",
+    "price": "",
+    "image": "https://i.pinimg.com/736x/52/3e/21/523e21946b7b43345be83d3ee5b678fd.jpg",
+    "amazon_url": "https://www.amazon.de/Wenko-50220100-Raumentfeuchter-Luftentfeuchter-Fassungsverm%C3%B6gen/dp/B074X4W71C?tag=habib4200-21",
+    "pinterest_url": "https://www.pinterest.com/pin/988540186979204737/",
+    "added": "2026-08-31"
   }
 ]
