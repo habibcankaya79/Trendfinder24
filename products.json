@@ -1,0 +1,56 @@
+[
+  {
+    "id": "p001",
+    "title": "Kabellose Ladestation 3-in-1",
+    "price": "24,99 €",
+    "image": "https://picsum.photos/seed/trendfinder1/600/750",
+    "amazon_url": "https://www.amazon.de/dp/EXAMPLE1?tag=habib4200-21",
+    "pinterest_url": "https://www.pinterest.com/pin/EXAMPLE1/",
+    "added": "2026-09-01"
+  },
+  {
+    "id": "p002",
+    "title": "Ergonomische Laptop-St\u00e4nder",
+    "price": "32,50 €",
+    "image": "https://picsum.photos/seed/trendfinder2/600/900",
+    "amazon_url": "https://www.amazon.de/dp/EXAMPLE2?tag=habib4200-21",
+    "pinterest_url": "https://www.pinterest.com/pin/EXAMPLE2/",
+    "added": "2026-09-02"
+  },
+  {
+    "id": "p003",
+    "title": "LED-Streifen f\u00fcr Gaming-Setup",
+    "price": "18,90 €",
+    "image": "https://picsum.photos/seed/trendfinder3/600/600",
+    "amazon_url": "https://www.amazon.de/dp/EXAMPLE3?tag=habib4200-21",
+    "pinterest_url": "https://www.pinterest.com/pin/EXAMPLE3/",
+    "added": "2026-09-02"
+  },
+  {
+    "id": "p004",
+    "title": "Mini-Luftbefeuchter USB",
+    "price": "15,99 €",
+    "image": "https://picsum.photos/seed/trendfinder4/600/800",
+    "amazon_url": "https://www.amazon.de/dp/EXAMPLE4?tag=habib4200-21",
+    "pinterest_url": "https://www.pinterest.com/pin/EXAMPLE4/",
+    "added": "2026-09-03"
+  },
+  {
+    "id": "p005",
+    "title": "Organizer-Set K\u00fcche",
+    "price": "21,40 €",
+    "image": "https://picsum.photos/seed/trendfinder5/600/700",
+    "amazon_url": "https://www.amazon.de/dp/EXAMPLE5?tag=habib4200-21",
+    "pinterest_url": "https://www.pinterest.com/pin/EXAMPLE5/",
+    "added": "2026-09-03"
+  },
+  {
+    "id": "p006",
+    "title": "Faltbare Reise-Kopfh\u00f6rer",
+    "price": "27,00 €",
+    "image": "https://picsum.photos/seed/trendfinder6/600/850",
+    "amazon_url": "https://www.amazon.de/dp/EXAMPLE6?tag=habib4200-21",
+    "pinterest_url": "https://www.pinterest.com/pin/EXAMPLE6/",
+    "added": "2026-09-04"
+  }
+]

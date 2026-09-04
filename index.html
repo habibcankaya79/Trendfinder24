@@ -1,16 +1,291 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <title>Datenschutzerklärung</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trendfinder24 — Gefundene Trends, sortiert</title>
+<meta name="description" content="Kuratierte Amazon-Fundst\u00fccke, gescannt und sortiert von Trendfinder24.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Newsreader:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0E1420;
+    --ink-soft:#161E2E;
+    --paper:#F3F1EA;
+    --line:#2A3448;
+    --signal:#3DFFB0;
+    --signal-dim:#1E7A57;
+    --amber:#FFB238;
+    --muted:#8B93A7;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--ink);
+    color:var(--paper);
+    font-family:'Space Grotesk',system-ui,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit;text-decoration:none;}
+
+  /* ---------- Header ---------- */
+  header{
+    padding:2.2rem 1.5rem 1.4rem;
+    max-width:1200px;
+    margin:0 auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+    border-bottom:1px solid var(--line);
+    gap:1rem;
+    flex-wrap:wrap;
+  }
+  .brand{
+    font-size:1.4rem;
+    font-weight:700;
+    letter-spacing:-0.02em;
+  }
+  .brand .dot{color:var(--signal);}
+  .tagline{
+    font-family:'Newsreader',serif;
+    font-style:italic;
+    color:var(--muted);
+    font-size:1.05rem;
+    max-width:26ch;
+    text-align:right;
+  }
+
+  /* ---------- Hero ---------- */
+  .hero{
+    max-width:1200px;
+    margin:0 auto;
+    padding:3.2rem 1.5rem 2.4rem;
+  }
+  .hero h1{
+    font-size:clamp(2.2rem, 5vw, 4rem);
+    line-height:1.05;
+    margin:0 0 1rem;
+    font-weight:700;
+    letter-spacing:-0.02em;
+    max-width:18ch;
+  }
+  .hero p{
+    color:var(--muted);
+    font-size:1.05rem;
+    max-width:52ch;
+    line-height:1.6;
+    margin:0;
+  }
+  .scan-line{
+    display:flex;
+    align-items:center;
+    gap:0.6rem;
+    margin-top:1.6rem;
+    color:var(--signal);
+    font-size:0.85rem;
+  }
+  .scan-line::before{
+    content:"";
+    width:8px;height:8px;
+    border-radius:50%;
+    background:var(--signal);
+    box-shadow:0 0 8px var(--signal);
+    animation:pulse 1.8s ease-in-out infinite;
+  }
+  @keyframes pulse{
+    0%,100%{opacity:1;}
+    50%{opacity:0.35;}
+  }
+  @media (prefers-reduced-motion: reduce){
+    .scan-line::before{animation:none;}
+  }
+
+  /* ---------- Grid ---------- */
+  main{
+    max-width:1200px;
+    margin:0 auto;
+    padding:1rem 1.5rem 5rem;
+  }
+  .grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill, minmax(230px, 1fr));
+    gap:1px;
+    background:var(--line);
+    border:1px solid var(--line);
+  }
+  .card{
+    background:var(--ink);
+    display:flex;
+    flex-direction:column;
+    position:relative;
+  }
+  .card .imgwrap{
+    position:relative;
+    overflow:hidden;
+    background:var(--ink-soft);
+  }
+  .card img{
+    width:100%;
+    display:block;
+    aspect-ratio:4/5;
+    object-fit:cover;
+    transition:transform 0.5s ease;
+  }
+  .card:hover img{transform:scale(1.04);}
+  .badge{
+    position:absolute;
+    top:0.7rem;
+    left:0.7rem;
+    background:var(--signal);
+    color:var(--ink);
+    font-size:0.68rem;
+    font-weight:700;
+    padding:0.25rem 0.55rem;
+    letter-spacing:0.02em;
+  }
+  .card-body{
+    padding:0.9rem 1rem 1.1rem;
+    display:flex;
+    flex-direction:column;
+    gap:0.5rem;
+    flex:1;
+  }
+  .card-title{
+    font-size:0.95rem;
+    font-weight:500;
+    line-height:1.35;
+  }
+  .card-meta{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:auto;
+  }
+  .price{
+    color:var(--amber);
+    font-weight:700;
+    font-size:0.95rem;
+  }
+  .actions{
+    display:flex;
+    gap:0.5rem;
+  }
+  .btn{
+    font-size:0.72rem;
+    font-weight:500;
+    padding:0.4rem 0.65rem;
+    border:1px solid var(--line);
+    transition:border-color 0.15s ease, color 0.15s ease;
+  }
+  .btn:hover{border-color:var(--signal); color:var(--signal);}
+  .btn.primary{
+    background:var(--paper);
+    color:var(--ink);
+    border-color:var(--paper);
+  }
+  .btn.primary:hover{
+    background:var(--signal);
+    border-color:var(--signal);
+    color:var(--ink);
+  }
+
+  /* ---------- Empty state ---------- */
+  .empty{
+    padding:4rem 1rem;
+    text-align:center;
+    color:var(--muted);
+  }
+
+  /* ---------- Footer ---------- */
+  footer{
+    max-width:1200px;
+    margin:0 auto;
+    padding:2rem 1.5rem 3rem;
+    border-top:1px solid var(--line);
+    color:var(--muted);
+    font-size:0.8rem;
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:0.8rem;
+  }
+  footer a:hover{color:var(--signal);}
+
+  @media (max-width:520px){
+    .tagline{text-align:left;}
+    header{flex-direction:column;align-items:flex-start;}
+  }
+</style>
 </head>
 <body>
-  <h1>Datenschutzerklärung</h1>
-  <p>Diese Anwendung ist ein privates Automatisierungsprojekt zur Verwaltung von Pinterest-Pins.</p>
-  <p>Es werden keine personenbezogenen Daten von Dritten oder Endnutzern gespeichert, verarbeitet oder weitergegeben. 
-  Die Anwendung nutzt ausschließlich die Pinterest-API, um im Namen des Kontoinhabers Pins zu erstellen und zu verwalten.</p>
-  <p>Es findet keine Erhebung von Nutzerdaten über Cookies, Tracking oder Formulare statt.</p>
-  <p>Bei Fragen zu dieser Datenschutzerklärung wenden Sie sich bitte an den Betreiber dieser Anwendung.</p>
-  <p>Stand: September 2026</p>
+
+<header>
+  <div class="brand">trendfinder<span class="dot">24</span></div>
+  <div class="tagline">Fundst&uuml;cke, die gerade auf Pinterest laufen &mdash; sortiert, bevor sie jeder kennt.</div>
+</header>
+
+<section class="hero">
+  <h1>Gerade gescannt, gerade gelandet.</h1>
+  <p>Jedes St&uuml;ck hier ist ein Produkt, das gerade als Pin ver&ouml;ffentlicht wurde. Sobald ein neuer Pin live geht, taucht er automatisch unten in der Liste auf.</p>
+  <div class="scan-line">Live-Feed aktiv</div>
+</section>
+
+<main>
+  <div id="grid" class="grid"></div>
+  <div id="empty" class="empty" style="display:none;">Noch keine Funde gescannt. Schau gleich nochmal vorbei.</div>
+</main>
+
+<footer>
+  <span>&copy; 2026 Trendfinder24</span>
+  <span>Als Amazon-Partner verdienen wir an qualifizierten K&auml;ufen.</span>
+  <a href="privacy.html">Datenschutz</a>
+</footer>
+
+<script>
+  async function loadProducts(){
+    const grid = document.getElementById('grid');
+    const empty = document.getElementById('empty');
+    try{
+      const res = await fetch('products.json', {cache:'no-store'});
+      const items = await res.json();
+      if(!items || items.length === 0){
+        empty.style.display = 'block';
+        return;
+      }
+      items
+        .slice()
+        .sort((a,b) => new Date(b.added) - new Date(a.added))
+        .forEach((item, i) => {
+          const card = document.createElement('article');
+          card.className = 'card';
+          const isNew = i < 3;
+          card.innerHTML = `
+            <div class="imgwrap">
+              ${isNew ? '<span class="badge">Neu</span>' : ''}
+              <img src="${item.image}" alt="${item.title}" loading="lazy">
+            </div>
+            <div class="card-body">
+              <div class="card-title">${item.title}</div>
+              <div class="card-meta">
+                <span class="price">${item.price}</span>
+                <div class="actions">
+                  <a class="btn" href="${item.pinterest_url}" target="_blank" rel="noopener">Pin</a>
+                  <a class="btn primary" href="${item.amazon_url}" target="_blank" rel="noopener sponsored">Ansehen</a>
+                </div>
+              </div>
+            </div>
+          `;
+          grid.appendChild(card);
+        });
+    }catch(e){
+      empty.textContent = 'Produkte konnten nicht geladen werden.';
+      empty.style.display = 'block';
+    }
+  }
+  loadProducts();
+</script>
+
 </body>
 </html>
